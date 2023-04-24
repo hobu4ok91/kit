@@ -1,6 +1,6 @@
 export const config = {
-  log: () => true,
-  enable: () => true,
+  logging: () => true,
+  enabled: () => true,
 };
 
 export function configure(partial: typeof config) {
