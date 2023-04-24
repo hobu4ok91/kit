@@ -1,5 +1,23 @@
 # @shop25/gtm
 
+## 0.0.5
+
+### Patch Changes
+
+- logging event
+
+## 0.0.4
+
+### Patch Changes
+
+- fix package
+
+## 0.0.3
+
+### Patch Changes
+
+- fix package
+
 ## 0.0.2
 
 ### Patch Changes

@@ -1,0 +1,14 @@
+.search-dialog-wrapper * {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+/* Write your global styles here, in PostCSS syntax */
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply p-2 flex-shrink-0 rounded-md border-none m-0 appearance-none px-3 h-8 inline-flex items-center cursor-pointer transition-colors hover:bg-opacity-80 no-underline;
+  }
+}

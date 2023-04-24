@@ -1,3 +1,5 @@
+import { config } from "~/config";
+
 declare global {
   var dataLayer: unknown[];
 }
@@ -8,7 +10,12 @@ export function hasDataLayer(): boolean {
 
 export function pushEvent(...args: unknown[]): void {
   if ("dataLayer" in globalThis && globalThis.dataLayer) {
+    if (config.logging()) {
+      console.log("GTM EVENT", ...args);
+    }
+
     globalThis.dataLayer.push(...args);
+
     return;
   }
 
