@@ -13,7 +13,7 @@ test("SignupEvent dispatched", () => {
 
   event.dispatch({ method: AuthMethod.email, status: AuthStatus.success });
 
-  type Payload = Parameters<typeof event["dispatch"]>[0];
+  type Payload = Parameters<(typeof event)["dispatch"]>[0];
 
   const payload = findPayload(event.eventName);
 
@@ -29,7 +29,7 @@ test("LoginEvent dispatched", () => {
 
   event.dispatch({ method: AuthMethod.email, status: AuthStatus.success });
 
-  type Payload = Parameters<typeof event["dispatch"]>[0];
+  type Payload = Parameters<(typeof event)["dispatch"]>[0];
 
   const payload = findPayload(event.eventName);
 
